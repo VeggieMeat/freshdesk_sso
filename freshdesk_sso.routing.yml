@@ -44,7 +44,7 @@ entity.freshdesk_config.delete_form:
 freshdesk_sso.redirect_controller_redirect:
   path: '/user/sso/freshdesk/{freshdesk_config}'
   defaults:
-    _controller: '\Drupal\freshdesk_sso\Controller\RedirectController::redirect'
+    _controller: '\Drupal\freshdesk_sso\Controller\RedirectController::ssoRedirect'
     _title: 'Freshdesk SSO Redirect'
   requirements:
     _custom_access: '\Drupal\freshdesk_sso\Controller\RedirectController::access'

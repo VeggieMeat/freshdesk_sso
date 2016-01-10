@@ -52,7 +52,7 @@ class RedirectController extends ControllerBase {
    * @return string
    *   Return Hello string.
    */
-  public function redirect(FreshdeskConfig $freshdesk_config) {
+  public function ssoRedirect(FreshdeskConfig $freshdesk_config) {
     return new TrustedRedirectResponse($this->freshdesk_sso_authentication->buildUrl($freshdesk_config));
   }
 
